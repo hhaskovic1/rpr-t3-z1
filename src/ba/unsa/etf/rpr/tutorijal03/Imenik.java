@@ -18,7 +18,13 @@ public class Imenik {
     }
 
     public String dajIme(TelefonskiBroj broj) {
-
+        Set set = listaBrojeva.entrySet();
+        Iterator it = set.iterator();
+        while(it.hasNext()) {
+            Map.Entry par = (Map.Entry)it.next();
+            if(par.getValue()==broj)return (String) par.getKey();
+        }
+        return null;
     }
 
     String naSlovo(char s) {
