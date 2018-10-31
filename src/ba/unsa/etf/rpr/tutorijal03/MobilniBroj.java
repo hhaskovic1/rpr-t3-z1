@@ -18,7 +18,7 @@ public class MobilniBroj extends TelefonskiBroj{
 
     @Override
     public String ispisi() {
-        return null;
+        return "0" + mobilnaMreza + "/" + broj;
     }
 
 
