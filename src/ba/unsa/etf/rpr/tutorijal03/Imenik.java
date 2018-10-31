@@ -29,10 +29,22 @@ public class Imenik {
 
     String naSlovo(char s) {
 
+        String lista="";
+        int i=1;
+        for (Map.Entry<String, TelefonskiBroj> entry : listaBrojeva.entrySet()) {
+            String rijec=entry.getKey();
+            char oznaka=rijec.charAt(0);
+            if(oznaka==s){
+                lista+=i + ". " + entry.getKey() + " - " + listaBrojeva.get(entry.getKey()).ispisi() + "\n";
+                i++;
+            }
+
+        }
+        return lista;
     }
 
     Set<String> izGrada(FiksniBroj.Grad g) {
-
+        return null;
     }
 
     Set<TelefonskiBroj> izGradaBrojevi(FiksniBroj.Grad g) {
