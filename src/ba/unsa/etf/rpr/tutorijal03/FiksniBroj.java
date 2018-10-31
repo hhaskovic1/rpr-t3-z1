@@ -16,7 +16,21 @@ public class FiksniBroj extends TelefonskiBroj{
 
     @Override
     public int hashCode() {
-        return 0;
+        int pozivniBroj;
+        if(this.grad==Grad.SARAJEVO)return pozivniBroj=33;
+        if(this.grad==Grad.TRAVNIK)return pozivniBroj=34;
+        if(this.grad==Grad.ORASJE)return pozivniBroj=35;
+        if(this.grad==Grad.ZENICA)return pozivniBroj=36;
+        if(this.grad==Grad.LIVNO)return pozivniBroj=37;
+        if(this.grad==Grad.TUZLA)return pozivniBroj=38;
+        if(this.grad==Grad.MOSTAR)return pozivniBroj=40;
+        if(this.grad==Grad.BIHAC)return pozivniBroj=41;
+        if(this.grad==Grad.GORAZDE)return pozivniBroj=42;
+        if(this.grad==Grad.SIROKIBRIJEG)return pozivniBroj=45;
+        if(this.grad==Grad.BRCKO)return pozivniBroj=50;
+
+
+
     }
 
     @Override
