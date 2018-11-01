@@ -43,8 +43,27 @@ public class Imenik {
         return lista;
     }
 
-    Set<String> izGrada(FiksniBroj.Grad g) {
-        return null;
+    public Set<String> izGrada(FiksniBroj.Grad g){
+        int broj=g.hashCode();
+        String s0="Haso";
+        Set<String> skup=new HashSet <>();
+        skup.add(s0);
+        String s="";
+        s+=broj;
+
+        for (Map.Entry<String, TelefonskiBroj> entry : listaBrojeva.entrySet()) {
+            String s1 = (entry.getValue()).ispisi();
+            String s2="";
+            String s3="";
+            s2+=(s1.charAt(1));
+            s3+=(s1.charAt(2));
+            s2+=s3;
+            if (s.equals(s3)){
+                skup.add((entry.getKey()));
+            }
+
+        }
+        return skup;
     }
 
     Set<TelefonskiBroj> izGradaBrojevi(FiksniBroj.Grad g) {
