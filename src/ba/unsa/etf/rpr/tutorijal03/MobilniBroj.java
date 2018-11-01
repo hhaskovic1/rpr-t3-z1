@@ -21,6 +21,8 @@ public class MobilniBroj extends TelefonskiBroj{
     }
 
 
+
+
     @Override
     public int hashCode() {
         return 0;

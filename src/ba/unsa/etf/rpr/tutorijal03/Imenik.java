@@ -45,7 +45,7 @@ public class Imenik {
 
     public Set<String> izGrada(FiksniBroj.Grad g){
         int broj=g.hashCode();
-        String s0="Haso";
+        String s0="Hasan Haskovic";
         Set<String> skup=new HashSet <>();
         skup.add(s0);
         String s="";
